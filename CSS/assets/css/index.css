@@ -1,0 +1,93 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    width: 100%;
+    margin: auto;
+}
+
+#he {
+    display: flex;
+}
+
+
+
+#tt {
+    margin-left: 600px;
+    margin-bottom: 0px;
+}
+#main
+ {
+    display: flex;
+  
+}
+
+
+
+#text{
+    float: left;
+    width: 90%;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+nav {
+    border: 5px black solid; padding-left: 30px; padding-top: 10px; padding-bottom: 10px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+footer {
+    border: 5px black solid; padding-left: 30px; padding-top: 10px; padding-bottom: 10px;
+    background-color: black;
+    margin-bottom: 5px; 
+}
+
+
+#colonne {
+    height: auto;
+    background: #999c98;
+     width: 80%; 
+}
+
+
+
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size : 4rem; 
+    } 
+}  
+@media screen and (max-width: 768px) 
+{ 
+ #colonne
+    { display: none; 
+    } 
+}  
+@media screen and (max-width: 768px) 
+{ 
+    h2 
+    { 
+        font-size : 3rem; 
+    } 
+} 
+@media screen and (max-width: 768px) 
+{ 
+    p 
+    { 
+        font-size : 2rem; 
+    } 
+    @media screen and (max-width: 768px) 
+  { 
+      #form 
+      { 
+          font-size : 2rem; 
+      } 
+     

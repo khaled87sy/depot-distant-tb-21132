@@ -1,13 +1,11 @@
-var b = parseFloat(prompt("Saisissez un nombre :"));
-var a = parseFloat(prompt("Saisissez le nombre de multiple :"));
-
+var x = parseFloat(prompt("Saisissez un nombre :"));
+var n = parseFloat(prompt("Saisissez le nombre de multiple :"));
 var resultat;
-while ( a>0)
+while ( n>0)
 {
-    resultat = b * a;
-    console.log(b + "*" + a + "=" + resultat);
-    a--;
+    resultat = x * n;
+    console.log(x + "*" + n + "=" + resultat);
+    n--;
 }
-console.log("Fin de la boucle");
 
-0
+

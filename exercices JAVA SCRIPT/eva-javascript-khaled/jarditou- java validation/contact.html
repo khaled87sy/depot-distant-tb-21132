@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/contact.css">       
+         <title>Contact</title>
+    </head>
+    <body>
+        <div class="container"> 
+            <header>
+            <div class="row">
+              <div class="d-none d-sm-block md-block col-lg-6 col-xl-8">
+                <img src= src/img/jarditou_logo.jpg width= "150" height= "50" class="img-fluid"  alt="Logo Jarditou" title="Logo Jarditou">
+                 </div>
+                 <div class="d-none d-sm-block md-block col-lg-6 col-xl-4">
+                     <h2>La qualité deouis 70 ans</h2>
+                 </div>
+
+             </div>
+
+    <!-- bloc de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">jarditou.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html" title="Aller a la page d'accueil">Acceuil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tableau.html" title="page tableau">tableau</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html" title="Contactez nous">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+            </header>
+                             <img src="src/img/promotion.jpg" class="img-fluid" alt="promotion sur lames de terrasse" title="promotion sur lames de terrasse">
+    <!-- section Formulaire -->
+            
+    <div class="form-group "> 
+                   <p>* Ces zones sont obligatoires</p>
+                        <form action="http://bienvu.net/script.php" method="POST" id="myform" name="myform" onsubmit="return validationForm()">
+                        <h1>Vos coordonnées</h1>  
+                                                <label for="nom"> Nom*:</label> <input type="text" class="form-control" name="nom" id="nom" >
+                                                <span id="ernom" class="error"></span> 
+                                                <br>
+                                                <label for="prenom"> prénom*:</label> <input type="text" class="form-control" name="prenom" id="prenom">
+                                                <span id="erprenom" class="error"></span>
+                                                <br>
+                                                <label for="feminin">Sex* </label> <br> 
+                                                <input type="radio" class="form-check form-check-inline" name="sexe" value="feminin" id="feminin" > Féminin
+                                                
+                                                <input type="radio" name="sexe" class="form-check form-check-inline" value="masculin" id="masculin"> Masculin
+                                                <input type="radio" name="sexe" class="form-check form-check-inline" value="Neutre" id="Neutre"> Neutre 
+                                                <br><span id="ersex" class="error"></span>
+                                                <br> <br>
+                                                <label for="date">Date de naissance*</label> <input type="date" class="form-control" name="date" id="date" >
+                                                <span id="erdate" class="error"></span>
+                                                <br>
+                                                <label for="cpostal">Code postal*</label> <input type="number" class="form-control" name="cpostal" id="cpostal" >
+                                                <span id="ercpostal" class="error"></span>
+                                                <br>
+                                                <label for="adresse">Adresse</label> <input type="text" class="form-control" name="adresse" id="adresse">
+                                                <span id="eradresse" class="error"></span>
+                                                <br>
+                                                <label for="ville">Ville</label> <input type="text" class="form-control" name="ville" id="ville">
+                                                <span id="erville" class="error"></span>
+                                                <br>
+                                                <label for="email">Email*</label> <input type="email" class="form-control" name="email" placeholder="dave.loper@afpa.fr" id="email">
+                                                <span id="eremail" class="error"></span>
+                                                <br>    
+                                            <h1>Votre demande:</h1>
+                                    <label for="sujet"> Sujet*</label> 
+                                    <select class="custom-select"  name="sujet" id="sujet"> 
+
+
+                                                <option value="">veuillez séléctionner un sujet</option>
+                                                <option value="commandes">Mes commandes</option>
+                                                <option value="produit">quistion sur un produit</option>
+                                                <option value="reclamation" >Réclamation</option>
+                                                <option value="autres">Autres</option>
+                                    </select>
+                                    <span id="ersujet" class="error"> </span>
+                                        <br><br>
+                                                <label for="questions">Votre question*:</label> <textarea  class="form-control"  name="les questions" id="questions" ></textarea>
+                                                <span id="erquestions" class="error"></span> <br>
+
+                                                <input type="checkbox" name="boxfin" id="box">
+                                                <label for="box">*J'accepte le traitement informatique de ce formulaire</label> <br>
+                                                 <span id="erbox" class="error"> </span> <br>
+                                                <br>
+                                                <input type="submit" class="btn btn-dark" value="Envoyer">
+                                                <input type="reset" class="btn btn-dark" value="anuler"> 
+                        </form>
+                                                                                        <hr>
+            
+                                                                                        <footer>
+                                                                                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                                                                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                <span class="navbar-toggler-icon"></span>
+                                                                                              </button>
+                                                                                                                                                               
+                                                                                              <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                                                                                                <ul class="navbar-nav mr-auto">
+                                                                                                  <li class="nav-item active">
+                                                                                                    <a class="nav-link" href="" title="Mentions légales">Mentions légales <span class="sr-only">(current)</span></a>
+                                                                                                  </li>
+                                                                                                  <li class="nav-item">
+                                                                                                    <a class="nav-link" href="" title="Horaires">Horaires</a>
+                                                                                                  </li>
+                                                                                                  <li class="nav-item">
+                                                                                                    <a class="nav-link" href="" title="Plan du site">Plan du site</a>
+                                                                                                  </li>
+                                                                                                </ul>
+                                                                                              </div>
+                                                                                            </nav>
+                                                                                      </footer>
+                                                              </div>
+                                                              <script src="js/contact.js"></script>
+                                                              <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                                                              <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                                                              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+         </div>                             
+    </body>
+</html>
